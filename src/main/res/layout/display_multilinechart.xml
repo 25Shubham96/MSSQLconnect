@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_storeNo"
+        android:layout_toLeftOf="@+id/tv_dummy"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:hint="Store No."
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dummy"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Chart"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_dummy"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:id="@+id/combinedchart"
+            android:layout_centerHorizontal="true">
+        </com.github.mikephil.charting.charts.CombinedChart>
+
+    </RelativeLayout>
+
+</RelativeLayout>

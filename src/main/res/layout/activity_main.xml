@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubhammundra.fromandto.MainActivity"
+    android:background="@drawable/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Table by Date"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_describe"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_start"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_describe"
+        android:layout_marginTop="25dp"
+        android:text="Select Start Date"
+        android:textSize="32dp"/>
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:id="@+id/dp_start"
+            android:layout_below="@+id/tv_start"
+            android:background="@drawable/border_style"
+            android:layout_centerHorizontal="true"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false">
+        </DatePicker>
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:id="@+id/dp_end"
+            android:layout_below="@+id/tv_end"
+            android:background="@drawable/border_style"
+            android:datePickerMode="spinner"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false">
+        </DatePicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_end"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dp_start"
+        android:layout_marginTop="10dp"
+        android:text="Select End Date"
+        android:textSize="32dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rv_datefilter">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:id="@+id/store"
+            android:layout_toLeftOf="@+id/middle">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_getTable"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@drawable/button_selector"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:text="Store"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/middle"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_toRightOf="@+id/middle">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_itemTable"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:background="@drawable/button_selector"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="Category"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
+

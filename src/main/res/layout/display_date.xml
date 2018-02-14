@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tb_head"
+        android:background="@color/colorPrimaryDark"
+        tools:targetApi="lollipop">
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Wise"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_describe"
+        android:layout_below="@+id/tb_head"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_describe">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/tv_from"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="From"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/tv_startdate"
+        android:background="@drawable/border_style"
+        android:layout_toRightOf="@id/tv_from"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:hint="Start Date"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/tv_to"
+        android:layout_toRightOf="@+id/tv_startdate"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="To"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/tv_enddate"
+        android:layout_toRightOf="@id/tv_to"
+        android:background="@drawable/border_style"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:hint="End Date"
+        android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="13sp"
+                android:layout_marginRight="13sp"
+                android:layout_marginBottom="13sp"
+                android:id="@+id/iv_refresh"
+                android:src="@drawable/ic_refresh_black_24dp"
+                android:layout_toRightOf="@+id/tv_enddate"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv"
+        android:layout_below="@+id/tv_from"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tl_myTable">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tr_index">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Store No"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_no"
+                        android:textColor="#000000"
+                        android:background="@drawable/border_style"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Store Name"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_name"
+                        android:textColor="#000000"
+                        android:background="@drawable/border_style"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Net Amount"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_netamt"
+                        android:textColor="#000000"
+                        android:background="@drawable/border_style"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"/>
+
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/sv">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:id="@+id/store"
+            android:layout_toLeftOf="@+id/middle">
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_piechart"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:background="@drawable/button_selector"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:text="Bar Chart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/middle"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_storeLinechart"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:background="@drawable/button_selector"
+                android:layout_alignParentBottom="true"
+                android:text="Line Chart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_toRightOf="@+id/middle">
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_piechart2"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:background="@drawable/button_selector"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:text="Pie Chart"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

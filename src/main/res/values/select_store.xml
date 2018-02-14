@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="StoreNo">
+        <item>Select</item>
+        <item>S0001</item>
+        <item>S0002</item>
+        <item>S0003</item>
+        <item>S0004</item>
+        <item>S0005</item>
+        <item>S0006</item>
+        <item>S0007</item>
+        <item>S0008</item>
+        <item>S0009</item>
+        <item>S0010</item>
+        <item>S0011</item>
+        <item>S0012</item>
+        <item>S0013</item>
+        <item>S0014</item>
+        <item>S0050</item>
+    </string-array>
+</resources>

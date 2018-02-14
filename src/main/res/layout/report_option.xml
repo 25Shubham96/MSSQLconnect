@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tb_head"
+        android:background="@color/colorPrimaryDark"
+        tools:targetApi="lollipop">
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_head">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_storeReport"
+        android:background="@drawable/button_selector"
+        android:layout_margin="15dp"
+        android:text="Store"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_categoryReport"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/btn_storeReport"
+        android:layout_margin="15dp"
+        android:text="Category"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_timeReport"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/btn_categoryReport"
+        android:layout_margin="15dp"
+        android:text="Time"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_paymentsReport"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/btn_timeReport"
+        android:layout_margin="15dp"
+        android:text="Payments"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_staffReport"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/btn_paymentsReport"
+        android:layout_margin="15dp"
+        android:text="Staff"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="#ffffff"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Line Chart"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:id="@+id/linechart"
+            android:layout_centerHorizontal="true">
+        </com.github.mikephil.charting.charts.LineChart>
+
+    </RelativeLayout>
+
+</RelativeLayout>

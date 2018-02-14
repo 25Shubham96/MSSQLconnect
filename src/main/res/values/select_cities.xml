@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Bedford</item>
+        <item>Brighton</item>
+        <item>Bristol</item>
+        <item>Glasgow</item>
+        <item>Guildford</item>
+        <item>Liverpool</item>
+        <item>London</item>
+        <item>Maidstone</item>
+        <item>Manchester</item>
+        <item>Newcastle</item>
+    </string-array>
+</resources>
